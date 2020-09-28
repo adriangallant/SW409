@@ -1,1 +1,0 @@
-Id: 4 Name: ohsafa Age: 21 Disease: diabetes Doctor: doc4

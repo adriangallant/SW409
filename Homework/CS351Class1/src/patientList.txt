@@ -1,5 +1,0 @@
-1 adrian 20 diabetes doc1
-2 aaron 21 cancer doc2
-3 hemant 21 cataracs doc3
-4 ohsafa 21 diabetes doc4
-5 vrithik 20 ebola doc5
