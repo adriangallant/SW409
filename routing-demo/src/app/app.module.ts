@@ -9,13 +9,16 @@ import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import { routing} from './app-routing.module';
 import {UserService} from './service/user.service.client';
+import {CourseService} from './service/course.service.client';
+import { CourseNavigatorComponent } from './course-navigator/course-navigator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ProfileComponent,
-    RegisterComponent
+    RegisterComponent,
+    CourseNavigatorComponent
   ],
   imports: [
     routing,
@@ -23,7 +26,7 @@ import {UserService} from './service/user.service.client';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [CourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
