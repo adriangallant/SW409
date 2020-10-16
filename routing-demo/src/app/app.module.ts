@@ -26,7 +26,7 @@ import { CourseNavigatorComponent } from './course-navigator/course-navigator.co
     AppRoutingModule,
     FormsModule
   ],
-  providers: [CourseService],
+  providers: [UserService, CourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

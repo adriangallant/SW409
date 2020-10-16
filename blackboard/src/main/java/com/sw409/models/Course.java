@@ -1,9 +1,12 @@
 package com.sw409.models;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 
 @Entity
@@ -15,6 +18,10 @@ public class Course {
 	
 	String title;
 	String authorName;
+	
+	@OneToMany(mappedBy = "course")
+	private List<Module> modules;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -33,6 +40,13 @@ public class Course {
 	public void setAuthorName(String authorName) {
 		this.authorName = authorName;
 	}
+	public List<Module> getModules() {
+		return modules;
+	}
+	public void setModules(List<Module> modules) {
+		this.modules = modules;
+	}
+	
 	
 	
 }
