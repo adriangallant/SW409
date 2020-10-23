@@ -1,6 +1,7 @@
 package com.employee.sw409.controllers;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -40,6 +41,11 @@ public class EmployeeController {
 	@DeleteMapping("api/v1/deleteEmployee/{employeeId}")
 	public void deleteEmployee(@PathVariable("employeeId") Integer id) {
 		employeeService.deleteEmployee(id);
+	}
+	
+	@GetMapping("api/v1/getEmployeeById/{employeeId}")
+	public Optional<Employee> getEmployeeById(@PathVariable("employeeId") Integer id) {
+		return employeeService.getEmployeeById(id);
 	}
 	
 
